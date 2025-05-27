@@ -1,0 +1,79 @@
+.calculator-result {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.calculator-result h4 {
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+.price-block {
+    background: white;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #dee2e6;
+}
+
+.price-block .currency {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #198754;
+}
+
+.price-block .amount {
+    font-size: 2em;
+    font-weight: bold;
+    color: #198754;
+    margin: 5px 0;
+}
+
+.price-factors {
+    margin-top: 20px;
+}
+
+.price-factors .factor {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.price-factors .factor:last-child {
+    border-bottom: none;
+}
+
+.price-factors .factor-name {
+    color: #6c757d;
+}
+
+.price-factors .factor-value {
+    font-weight: 500;
+}
+
+.calculator-note {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #dee2e6;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.calculator-result {
+    animation: fadeIn 0.3s ease-out;
+} 

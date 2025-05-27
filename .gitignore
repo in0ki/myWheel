@@ -1,0 +1,56 @@
+# Configuration files
+config.php
+.env
+.env.*
+!.env.example
+
+# Uploaded files
+uploads/*
+!uploads/.gitkeep
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.db
+
+# Cache and temporary files
+/cache/
+/temp/
+*.cache
+*.tmp
+
+# Build and compiled files
+/dist/
+/build/
+*.min.js
+*.min.css
+
+# Testing
+/coverage/
+/tests/coverage/
+.phpunit.result.cache
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini 
