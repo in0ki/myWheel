@@ -70,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     const loginModal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
                     loginModal.hide();
                     window.location.reload();
-                    console.log('text')
                 } else {
                     alert('Помилка входу: ' + data.message);
                 }

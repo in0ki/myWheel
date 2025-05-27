@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 data.cars.forEach(car => {
                     const slide = document.createElement('div');
-                    console.log(car);
                     slide.className = 'swiper-slide';
                     slide.innerHTML = `
                         <div class="card">

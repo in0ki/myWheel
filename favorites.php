@@ -20,17 +20,10 @@ $stmt->execute([getCurrentUserId()]);
 $favorites = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 include 'includes/header.php';
-
-
 ?>
 
 <main class="container mt-5 pt-4">
     <h1 class="mb-4">Обране</h1>
-    
-   
-    
-
-    
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="favoritesGrid">
         <?php if (empty($favorites)): ?>
             <div class="col-12 text-center">

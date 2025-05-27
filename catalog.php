@@ -141,22 +141,6 @@ include 'includes/header.php';
                                    placeholder="Введіть модель">
                         </div>
 
-                        <!-- <div class="mb-3">
-                            <label class="form-label">Ціна</label>
-                            <div class="row">
-                                <div class="col">
-                                    <input type="number" class="form-control" name="priceMin" 
-                                           value="<?php echo isset($_GET['priceMin']) ? htmlspecialchars($_GET['priceMin']) : ''; ?>"
-                                           placeholder="Від">
-                                </div>
-                                <div class="col">
-                                    <input type="number" class="form-control" name="priceMax" 
-                                           value="<?php echo isset($_GET['priceMax']) ? htmlspecialchars($_GET['priceMax']) : ''; ?>"
-                                           placeholder="До">
-                                </div>
-                            </div>
-                        </div> -->
-
                         <div class="mb-3">
                             <label class="form-label">Рік випуску</label>
                             <div class="row">
