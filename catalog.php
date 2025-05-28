@@ -256,7 +256,7 @@ include 'includes/header.php';
                     <?php foreach ($listings as $listing): ?>
                         <div class="col">
                             <div class="card h-100 shadow-sm">
-                                <img src="<?php echo !empty($listing['main_photo']) ? 'uploads/' . $listing['main_photo'] : 'images/no-image.jpg'; ?>" 
+                                <img src="<?php echo !empty($listing['main_photo']) ? 'uploads/' . $listing['main_photo'] : 'images/no-image.png'; ?>" 
                                      class="card-img-top" 
                                      alt="<?php echo htmlspecialchars($listing['brand'] . ' ' . $listing['model']); ?>"
                                      style="height: 200px; object-fit: cover;">
