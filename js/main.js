@@ -6,21 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let currentUser = null;
 
-    // function updateAuthUI() {
-    //     const authButtons = document.querySelector('.auth-buttons');
-    //     const userMenu = document.querySelector('.user-menu');
-        
-    //     if (currentUser) {
-    //         // User is logged in
-    //         authButtons.style.display = 'none';
-    //         userMenu.style.display = 'block';
-    //         document.querySelector('.user-name').textContent = `${currentUser.firstName} ${currentUser.lastName}`;
-    //     } else {
-    //         // User is not logged in
-    //         authButtons.style.display = 'block';
-    //         userMenu.style.display = 'none';
-    //     }
-    // }
     function formatNumber(number) {
         return number ? number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") : "0";
       }
@@ -31,16 +16,13 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(data => {
                 if (data.success) {
                     currentUser = data.user;
-                    // updateAuthUI();
                 } else {
                     currentUser = null;
-                    // updateAuthUI();
                 }
             })
             .catch(error => {
                 console.error('Error checking auth state:', error);
                 currentUser = null;
-                // updateAuthUI();
             });
     }
 
@@ -90,7 +72,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 .then(data => {
                     if (data.success) {
                         currentUser = null;
-                        // updateAuthUI();
                     }
                 })
                 .catch(error => {
