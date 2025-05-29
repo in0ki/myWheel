@@ -5,7 +5,7 @@ require_once 'includes/functions.php';
 $conn = getDBConnection();
 
 $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-$per_page = 10;
+$per_page = 9;
 $offset = ($page - 1) * $per_page;
 
 $where_conditions = ["1=1"];
